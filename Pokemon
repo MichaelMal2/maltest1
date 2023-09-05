@@ -1,0 +1,18 @@
+class Pokemon:
+    def __init__(self, name, level):
+        self.name = name
+        self.level = level
+
+class Pikachu(Pokemon):
+    def __init__(self, name, level):
+        super().__init__(name, level)
+
+    def pikachu_attack(self):
+        # Code for Pikachu's specific attack
+        print(f"{self.name} used Thunderbolt!")
+
+# Create an instance of Pikachu
+pikachu = Pikachu("Pikachu", 5)
+
+# Call Pikachu's attack method
+pikachu.pikachu_attack()
